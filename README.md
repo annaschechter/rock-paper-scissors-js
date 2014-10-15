@@ -1,0 +1,1 @@
+This exercise is an introduction to JavaScript and Jasmime. In this exercise we use JavaScript to build the Rock, Paper, Scissors game playable against computer.
