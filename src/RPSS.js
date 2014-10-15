@@ -10,24 +10,19 @@ function Scissors() {
 	this.type = "scissors";
 };
 
-function Rules(){};
+function Rules(){
+	this.beats = {
+		"rock": "scissors",
+		"scissors": "paper",
+		"paper": "rock"};
+};
+
 
 Rules.prototype.winner = function(objectOne, objectTwo) {
-	if(objectOne.type === objectTwo.type) {return "draw"};
+	 if(objectOne.type === objectTwo.type) {return "draw"};
 
-	if(objectOne.type === "rock")
-		if(objectTwo.type === "scissors")
-			return true;
-		else 
-			return false;
-	else if(objectOne.type === "scissors")
-		if(objectTwo.type === "paper")
-			return true;
-		else
-			return false;
-	else
-		if(objectTwo.type === "rock")
-			return true;
-		else
-		return false;
+	 if(this.beats[objectOne.type] === objectTwo.type)
+	 	return objectOne.type;
+	 else
+	 	return objectTwo.type;
 };

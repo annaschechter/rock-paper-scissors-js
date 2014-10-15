@@ -27,11 +27,11 @@ describe("Rock, Paper, Scissors", function() {
 		});
 
 		it("rock beats scissors", function() {
-			expect(rules.winner(rock, scissors)).toBe(true);
+			expect(rules.winner(rock, scissors)).toBe("rock");
 		});
 
 		it("scissors don't beat rock", function(){
-			expect(rules.winner(scissors, rock)).toBe(false);
+			expect(rules.winner(scissors, rock)).toBe("rock");
 		});
 
 		it("same choices give draw", function(){
@@ -39,19 +39,19 @@ describe("Rock, Paper, Scissors", function() {
 		});
 
 		it("scissors beat paper", function() {
-			expect(rules.winner(scissors, paper)).toBe(true);
+			expect(rules.winner(scissors, paper)).toBe("scissors");
 		});
 
 		it("paper doesn't beat scissors", function() {
-			expect(rules.winner(paper, scissors)).toBe(false);
+			expect(rules.winner(paper, scissors)).toBe("scissors");
 		});
 
 		it("paper beats rock", function() {
-			expect(rules.winner(paper, rock)).toBe(true);
+			expect(rules.winner(paper, rock)).toBe("paper");
 		});
 
 		it("rock doesn't beat paper", function() {
-			expect(rules.winner(rock, paper)).toBe(false);
+			expect(rules.winner(rock, paper)).toBe("paper");
 		});
 	});
 
