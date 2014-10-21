@@ -27,9 +27,12 @@ main {
 	font-size: 160%;
 }
 
+article {
+	display: inline;
+}
+
 .choices {
-/*	border: 5px solid #3b9cd9;*/
-	display: inline-block;
+	height: 10%;
 /*	padding: 5%;*/
 	margin: 5%;
 }
