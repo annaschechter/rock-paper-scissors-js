@@ -14,9 +14,12 @@ $('.choices').each(function() {
 		rules = new Rules;
 		var playerChoice = $(this);
 		var winner = rules.winner(playerChoice.data(), computerChoice());
-		if(winner === "draw") var winningText = "It's a draw!!!";
-	 	else winningText = "The winner is "+ winner + "!!!";
-		$('#text-winner').text(winningText);
+		if(winner === "draw") var winningText = "It's a draw!";
+		if(winner === "rock") var winningText = "Rock crushes scissors!";
+		if(winner === "paper") var winningText = "Paper covers rock!";
+		if(winner === "scissors") var winningText = "Scissors cut paper!";
+		// $('#text-winner').
+		alert(winningText);
 	});
 });
 
