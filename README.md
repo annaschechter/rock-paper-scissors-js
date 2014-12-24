@@ -8,6 +8,8 @@ Rock, Paper, Scissors is a one player, online game with the following functional
 * when the user clicks on one of the options, the program choses a random option
 * the winner is announced
 
+<img src="https://s3-eu-west-1.amazonaws.com/annas-first-test-bucket/rps-js.png">
+
 Languages and Tools
 -------------------
 * JavaScript
